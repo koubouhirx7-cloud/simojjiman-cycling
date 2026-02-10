@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>シモジマン | Shimojiman Official Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#258cf4",
+                        "secondary": "#10b981",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans JP", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans JP', sans-serif;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#181411] selection:bg-primary/30">
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-50 glass-effect border-b border-solid border-primary/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <div class="flex items-center gap-3">
+                    <div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined">pedal_bike</span>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tighter text-[#181411]">SHIMOJIMAN</span>
+                </div>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#about">About</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#services">Services</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="#youtube">YouTube</a>
+                    <a class="flex items-center gap-2 bg-primary px-5 py-2.5 rounded-lg text-white text-sm font-bold hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20"
+                        href="#contact">
+                        <span class="material-symbols-outlined text-sm">mail</span>
+                        お問い合わせ
+                    </a>
+                </nav>
+                <button class="md:hidden text-[#181411]">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden bg-background-light py-12 lg:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1 flex flex-col gap-8">
+                        <div
+                            class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider">
+                            <span class="relative flex h-2 w-2">
+                                <span
+                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                                <span class="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                            </span>
+                            Professional MC &amp; Creator
+                        </div>
+                        <h1
+                            class="text-4xl sm:text-5xl lg:text-7xl font-black text-[#181411] leading-[1.1] tracking-tight">
+                            シモジマン <br />
+                            <span class="text-primary tracking-tighter">Shimojiman</span>
+                        </h1>
+                        <p class="text-lg sm:text-xl text-[#181411]/70 leading-relaxed max-w-xl">
+                            イベントMC / サイクルロードレース解説 / プロダクトレビュー。<br />
+                            専門知識とパッションで、スポーツとテクノロジーの魅力を最大限に引き出します。
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <a class="px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-xl shadow-primary/30 hover:translate-y-[-2px] transition-all"
+                                href="#contact">
+                                お仕事の依頼はこちら
+                            </a>
+                            <a class="px-8 py-4 bg-white border border-gray-200 text-[#181411] font-bold rounded-xl hover:bg-gray-50 transition-all"
+                                href="#services">
+                                実績を見る
+                            </a>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 relative">
+                        <div class="absolute inset-0 bg-primary/20 rounded-[2rem] rotate-3"></div>
+                        <img alt="Shimojiman professional profile with bicycle"
+                            class="relative rounded-[2rem] shadow-2xl w-full aspect-[4/5] object-cover"
+                            data-alt="Professional cyclist Shimojiman holding his bicycle in a scenic outdoor setting by a lake."
+                            src="https://placehold.co/800x1000?text=Shimojiman+Profile" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section class="py-24 bg-white" id="about">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row gap-16 items-start">
+                    <div class="w-full md:w-1/3">
+                        <h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4">About</h2>
+                        <h3 class="text-4xl font-black text-[#181411] leading-tight">マルチな才能で<br />現場を熱くする</h3>
+                    </div>
+                    <div class="w-full md:w-2/3">
+                        <p class="text-xl text-[#181411]/80 leading-relaxed mb-8">
+                            サイクルロードレースの実況解説から、最新ガジェットのプロダクトレビューまで、確かな専門知識とエネルギッシュなトークで現場を盛り上げます。
+                        </p>
+                        <p class="text-lg text-[#181411]/60 leading-relaxed">
+                            競技者としての視点と、メディアクリエイターとしての視点を融合。視聴者や観客に「技術的な深み」と「エンターテインメント性」を同時に提供することを得意としています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Section -->
+        <section class="py-24 bg-background-light" id="services">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4">Services</h2>
+                    <p class="text-3xl font-black text-[#181411]">提供可能なプロフェッショナルサービス</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <!-- Service Card 1 -->
+                    <a href="service_detail.html"
+                        class="block bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow group">
+                        <div
+                            class="size-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-8 group-hover:text-white transition-all bg-secondary/10 group-hover:bg-secondary">
+                            <span class="material-symbols-outlined text-4xl">mic</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Event MC</h4>
+                        <p class="text-[#181411]/70 leading-relaxed">
+                            スポーツイベント、テックカンファレンス、新製品発表会など。会場の空気を読み、スムーズかつエネルギッシュな進行をお約束します。
+                        </p>
+                    </a>
+                    <!-- Service Card 2 -->
+                    <!-- Service Card 2 -->
+                    <a href="service_detail.html"
+                        class="block bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow group">
+                        <div
+                            class="size-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-8 group-hover:text-white transition-all bg-secondary/10 group-hover:bg-secondary">
+                            <span class="material-symbols-outlined text-4xl">sports_score</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Cycling Commentary</h4>
+                        <p class="text-[#181411]/70 leading-relaxed">
+                            JBCF（日本実業団自転車競技連盟）などのロードレース実況解説。戦術的な分析を分かりやすく伝え、レースの興奮を届けます。
+                        </p>
+                    </a>
+                    <!-- Service Card 3 -->
+                    <!-- Service Card 3 -->
+                    <a href="service_detail.html"
+                        class="block bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow group">
+                        <div
+                            class="size-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-8 group-hover:text-white transition-all bg-secondary/10 group-hover:bg-secondary">
+                            <span class="material-symbols-outlined text-4xl">video_camera_front</span>
+                        </div>
+                        <h4 class="text-2xl font-bold mb-4">Product Review</h4>
+                        <p class="text-[#181411]/70 leading-relaxed">
+                            自転車本体からアクセサリ、最新のテックガジェットまで。徹底的な使い込みに基づいた、信頼性の高い動画・記事制作を行います。
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- YouTube Section -->
+        <section
+            class="py-24 text-white relative overflow-hidden bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-primary/20"
+            id="youtube">
+            <div class="absolute right-0 top-0 w-1/3 h-full bg-primary/10 blur-[120px] rounded-full"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col lg:flex-row items-center gap-16">
+                    <div class="lg:w-1/2">
+                        <div
+                            class="inline-block px-4 py-1 text-white text-xs font-bold rounded-md mb-6 uppercase bg-secondary">
+                            YouTube Official</div>
+                        <h2 class="text-4xl sm:text-5xl font-black mb-8 leading-tight">登録者数
+                            100,000人超。<br />サイクリングコミュニティを<br />リードする発信力。</h2>
+                        <p class="text-lg text-white/70 leading-relaxed mb-10">
+                            「シモジマンチャンネル」では、最新機材の検証からトレーニング方法、レースの裏側まで、サイクリストに役立つ情報を日々配信。高いエンゲージメントを誇るコミュニティを形成しています。
+                        </p>
+                        <a class="inline-flex items-center gap-3 px-8 py-4 bg-white text-[#181411] font-bold rounded-xl hover:bg-opacity-90 transition-all"
+                            href="#">
+                            <span class="material-symbols-outlined">play_circle</span>
+                            YouTubeチャンネルを見る
+                        </a>
+                    </div>
+                    <div class="lg:w-1/2 grid grid-cols-2 gap-4">
+                        <div class="aspect-video bg-white/5 rounded-xl border border-white/10 flex items-center justify-center"
+                            data-alt="Action cycling shot for YouTube preview"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD1i1KZ7wuHAOT92HUXuhzh0Mt00Z4uqZJBpP1PmBEqizvPfJUxnspt4xxzgVlUXzW9h-FHcZckkMJLB3CthBDcyLW0TEks06dmwhJVrjoz7jlI8sIYQltQ4fbOQ8gdcY8wWFB23wZjGwteR5yJzxeuGuIk3wcXvaMT_NOAK-mDu9ljqRXkmzT3UDqsVGG3G6YrAHIEWdylcyDhhlaOS27OI-GsM8kjUE6L7qoSHNdZDW4iJXsNHs14au42fsdqdzBwZlmk5swy0w"); background-size: cover; background-position: center;'>
+                        </div>
+                        <div class="aspect-video bg-white/5 rounded-xl border border-white/10 flex items-center justify-center"
+                            data-alt="Abstract orange and blue gradient background"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCyFY24uGoJP2ldSkXZdmmfCPn83MDldNiO06VZcHoStMRHcHC4UyRxE__l_kwG-yXaTChc97bChsSb1nbZhQBphtcPrJdJWj7XgxzmoTSybL-UCess8DQzvU7eD5OfA7I7cPuyWAbuVOHDclKwmEbgOE-jWBURRNNXvI6o30_FdAGtR2afBw_kxoejbLrM3dH6_qkYalWD2MToh_BlRnqRWFhCWvj3s-LlPU058VHtNYrVYtUQLj4rIepL1qk11vBnuwf0pMFelw"); background-size: cover; background-position: center;'>
+                        </div>
+                        <div class="aspect-video bg-white/5 rounded-xl border border-white/10 flex items-center justify-center"
+                            data-alt="Cycling gear product review shot"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfLI_lOEIGJiOJBBo6QP8Fr4YzeRceBsiItd_oWqH_IypqGL8Bs6hNRSVJj2GoRSKZaWpD6U73YAbmZpbGG7Ua18BdPuUgjEfvqqzZTQ7IGMZv5V6-SZLzu3PINHw6XPpQ39jGBCZb2a79FzAwmqBlIKbbWzyCxKs1Wbt2F51tIcV1q9YpYRCZOhdmuTliOYUoSqPFdwomZhQJxupHqkx6bhJOT4JFwc6ovyDCCEdUPqJ9Uy_Om3gMmKexZw66haG6iCAcXfuYGQ"); background-size: cover; background-position: center;'>
+                        </div>
+                        <div class="aspect-video bg-white/5 rounded-xl border border-white/10 flex items-center justify-center"
+                            data-alt="Laptop and gadget setup for video editing"
+                            style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDILqkx669uaNpIL44zOrpNSGqcrZQfLBQJKLuQn4efIq2xptzsvOQI1CT-W8XXjzBV9ygK55CopSMXX0SdNGQZ4wCtKUJnPFiaCehaUenMll_NHyy6M1Af9Kq-ugt6TKp5PYSRBslBoa6x-VWUIZSQ_bDuiHWYMbWx1evneSAqaJDgLtwbxQ2_GW63KqpZc3VRHfyzKKnwsmuiZc-E96vkrEkq48bXFFDPEBx7cDtMGtWm536YN68r310z7zul0ntFa7PpGnlNVA"); background-size: cover; background-position: center;'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="py-24 bg-white" id="contact">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4">Contact</h2>
+                    <p class="text-3xl font-black text-[#181411]">ビジネスに関するお問い合わせ</p>
+                    <p class="mt-4 text-[#181411]/60">お仕事の依頼やタイアップのご相談など、お気軽にご連絡ください。</p>
+                </div>
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-[#181411] mb-2">お名前</label>
+                            <input
+                                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                placeholder="山田 太郎" type="text" />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-[#181411] mb-2">貴社名 / 組織名</label>
+                            <input
+                                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                placeholder="株式会社Shimojiman" type="text" />
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-[#181411] mb-2">メールアドレス</label>
+                        <input
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                            placeholder="example@email.com" type="email" />
+                    </div>
+                    <div>
+                        <label class="block text-sm font-bold text-[#181411] mb-2">お問い合わせ内容</label>
+                        <textarea
+                            class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                            placeholder="ご依頼内容、時期、ご予算など" rows="6"></textarea>
+                    </div>
+                    <button
+                        class="w-full py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/30 hover:bg-opacity-95 transition-all"
+                        type="submit">
+                        送信する
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-background-light py-12 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="size-6 bg-primary rounded-md flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined text-xs">pedal_bike</span>
+                    </div>
+                    <span class="text-lg font-extrabold tracking-tighter">SHIMOJIMAN</span>
+                </div>
+                <div class="flex gap-8 text-[#181411]/60">
+                    <a class="hover:text-primary transition-colors" href="#">YouTube</a>
+                    <a class="hover:text-primary transition-colors" href="#">Twitter (X)</a>
+                    <a class="hover:text-primary transition-colors" href="#">Instagram</a>
+                </div>
+                <p class="text-sm text-[#181411]/40">
+                    © 2024 Shimojiman. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

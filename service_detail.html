@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Service Detail | Shimojiman Official Portfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#258cf4",
+                        "secondary": "#10b981",
+                        "background-light": "#ffffff",
+                        "background-dark": "#0f172a",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans JP", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans JP', sans-serif;
+        }
+
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-[#181411] selection:bg-primary/30">
+    <!-- Top Navigation Bar -->
+    <header class="sticky top-0 z-50 glass-effect border-b border-solid border-primary/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                <a href="index.html" class="flex items-center gap-3">
+                    <div class="size-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined">pedal_bike</span>
+                    </div>
+                    <span class="text-xl font-extrabold tracking-tighter text-[#181411]">SHIMOJIMAN</span>
+                </a>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="index.html#about">About</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="index.html#services">Services</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors"
+                        href="index.html#youtube">YouTube</a>
+                    <a class="flex items-center gap-2 bg-primary px-5 py-2.5 rounded-lg text-white text-sm font-bold hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20"
+                        href="index.html#contact">
+                        <span class="material-symbols-outlined text-sm">mail</span>
+                        お問い合わせ
+                    </a>
+                </nav>
+                <button class="md:hidden text-[#181411]">
+                    <span class="material-symbols-outlined">menu</span>
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Page Hero -->
+        <section class="relative bg-background-light py-12 lg:py-20 border-b border-gray-100">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider mb-6">
+                    Service Detail
+                </div>
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black text-[#181411] leading-tight mb-6">
+                    Event MC
+                </h1>
+                <p class="text-lg text-[#181411]/70 leading-relaxed max-w-2xl mx-auto">
+                    スポーツイベント、テックカンファレンス、新製品発表会など。会場の空気を読み、スムーズかつエネルギッシュな進行をお約束します。
+                </p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="py-16 lg:py-24 bg-white">
+            <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- Article Image -->
+                <div class="rounded-2xl overflow-hidden shadow-lg mb-12">
+                    <img src="https://placehold.co/1200x600?text=Event+MC+Scene" alt="Event MC Scene"
+                        class="w-full h-auto object-cover hover:scale-105 transition-transform duration-700">
+                </div>
+
+                <!-- Content Body -->
+                <div class="prose prose-lg prose-slate max-w-none">
+                    <h2 class="text-2xl font-bold text-[#181411] mb-6">会場の一体感を作り出す、プロフェッショナルの進行</h2>
+                    <p class="text-[#181411]/80 leading-relaxed mb-8">
+                        イベントの成功は、MCの進行にかかっていると言っても過言ではありません。台本通りの進行はもちろん、その場の雰囲気や予期せぬトラブルにも臨機応変に対応できる柔軟性が求められます。
+                        私は長年の経験を活かし、参加者の皆様が安心して楽しめ、主催者様の想いが伝わるような空間づくりをサポートいたします。
+                    </p>
+
+                    <h3 class="text-xl font-bold text-[#181411] mb-4">主な対応イベント</h3>
+                    <ul class="list-disc pl-6 space-y-2 mb-8 text-[#181411]/80">
+                        <li>スポーツイベント（自転車ロードレース、マラソン大会、トライアスロン等）</li>
+                        <li>テックカンファレンス・セミナー司会</li>
+                        <li>新製品発表会・プレスリリースイベント</li>
+                        <li>トークショー・パネルディスカッションのモデレーター</li>
+                    </ul>
+
+                    <h3 class="text-xl font-bold text-[#181411] mb-4">実績例</h3>
+                    <p class="text-[#181411]/80 leading-relaxed mb-8">
+                        2023年 ○○サイクルフェスティバル メインMC<br>
+                        2024年 △△テックカンファレンス 総合司会<br>
+                        その他、多数の企業様イベントにてMCを担当させていただいております。
+                    </p>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-16 p-8 bg-gray-50 rounded-2xl border border-gray-100 text-center">
+                    <h3 class="text-xl font-bold text-[#181411] mb-4">このサービスについてのお問い合わせ</h3>
+                    <p class="text-[#181411]/70 mb-8">
+                        イベントの規模や内容に合わせて、最適なプランをご提案させていただきます。まずはお気軽にご相談ください。
+                    </p>
+                    <a href="index.html#contact"
+                        class="inline-flex items-center gap-2 bg-primary px-8 py-3 rounded-xl text-white font-bold hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20">
+                        <span class="material-symbols-outlined">mail</span>
+                        お問い合わせフォームへ
+                    </a>
+                </div>
+                <div class="mt-12 text-center">
+                    <a href="index.html#services"
+                        class="text-primary font-bold hover:underline flex items-center justify-center gap-2">
+                        <span class="material-symbols-outlined text-sm">arrow_back</span>
+                        サービス一覧に戻る
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-background-light py-12 border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+                <div class="flex items-center gap-3">
+                    <div class="size-6 bg-primary rounded-md flex items-center justify-center text-white">
+                        <span class="material-symbols-outlined text-xs">pedal_bike</span>
+                    </div>
+                    <span class="text-lg font-extrabold tracking-tighter">SHIMOJIMAN</span>
+                </div>
+                <div class="flex gap-8 text-[#181411]/60">
+                    <a class="hover:text-primary transition-colors" href="#">YouTube</a>
+                    <a class="hover:text-primary transition-colors" href="#">Twitter (X)</a>
+                    <a class="hover:text-primary transition-colors" href="#">Instagram</a>
+                </div>
+                <p class="text-sm text-[#181411]/40">
+                    © 2024 Shimojiman. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
