@@ -95,6 +95,66 @@
             padding: 1.5rem 2rem;
             border-radius: 0 1rem 1rem 0;
         }
+
+        /* Table of Contents Styling */
+        #toc-container {
+            background: #f1f5f9;
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            border: 1px solid #e2e8f0;
+        }
+
+        #toc-container h2 {
+            font-size: 1.25rem;
+            font-weight: 800;
+            margin-top: 0;
+            margin-bottom: 1rem;
+            border-bottom: none;
+            padding-bottom: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        #toc-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #toc-list li {
+            margin-bottom: 0.75rem;
+        }
+
+        #toc-list a {
+            color: #475569;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.2s;
+            display: block;
+            padding: 0.25rem 0;
+        }
+
+        #toc-list a:hover {
+            color: #258cf4;
+            transform: translateX(5px);
+        }
+
+        /* Custom List Marker */
+        .prose ul li {
+            position: relative;
+            padding-left: 0.5rem;
+        }
+
+        .prose ul li::before {
+            content: "•";
+            color: #258cf4;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
     </style>
 </head>
 
@@ -126,7 +186,16 @@
                 </header>
 
                 <div id="blog-body" class="prose prose-lg max-w-none text-[#181411]/80 leading-relaxed">
-                    <!-- Content will be injected here -->
+                    <div id="toc-container" class="hidden">
+                        <h2>
+                            <span class="material-symbols-outlined text-primary">format_list_bulleted</span>
+                            目次
+                        </h2>
+                        <ul id="toc-list"></ul>
+                    </div>
+                    <div id="post-content">
+                        <!-- Content will be injected here -->
+                    </div>
                 </div>
             </div>
         </article>
@@ -153,7 +222,27 @@
                 document.title = `${post.title} | シモジマン`;
                 document.getElementById('blog-title').textContent = post.title;
                 document.getElementById('blog-date').textContent = new Date(post.publishedAt || post.createdAt).toLocaleDateString("ja-JP");
-                document.getElementById('blog-body').innerHTML = post.content;
+
+                // Inject content and generate TOC
+                const postContentContainer = document.getElementById('post-content');
+                postContentContainer.innerHTML = post.content;
+
+                // TOC Generation Logic
+                const h2s = postContentContainer.querySelectorAll('h2');
+                if (h2s.length > 0) {
+                    const tocList = document.getElementById('toc-list');
+                    h2s.forEach((h2, index) => {
+                        const id = `heading-${index}`;
+                        h2.id = id;
+                        const li = document.createElement('li');
+                        const a = document.createElement('a');
+                        a.href = `#${id}`;
+                        a.textContent = h2.textContent;
+                        li.appendChild(a);
+                        tocList.appendChild(li);
+                    });
+                    document.getElementById('toc-container').classList.remove('hidden');
+                }
 
                 if (post.eyecatch) {
                     document.getElementById('blog-eyecatch').innerHTML = `<img src="${post.eyecatch.url}" class="w-full h-auto">`;
