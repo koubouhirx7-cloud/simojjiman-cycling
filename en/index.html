@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>シモジマン | Shimojiman Official Portfolio</title>
+    <title>Shimojiman | Official Portfolio</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap"
         rel="stylesheet" />
@@ -32,7 +32,7 @@
     </script>
     <style>
         body {
-            font-family: 'Plus Jakarta Sans', 'Noto Sans JP', sans-serif;
+            font-family: 'Plus Jakarta Sans', sans-serif;
         }
 
         .glass-effect {
@@ -66,8 +66,8 @@
             animation: crossfade 12s infinite;
         }
     </style>
-    <script src="js/utils.js"></script>
-    <script src="js/blog.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/blog.js"></script>
 </head>
 
 <body class="bg-background-light dark:bg-background-dark text-[#181411] selection:bg-primary/30">
@@ -90,23 +90,24 @@
 
                     <!-- Language Switcher -->
                     <div class="flex items-center bg-gray-100 rounded-full p-1 border border-gray-200">
+                        <a href="../index.html"
+                            class="px-3 py-1 text-[10px] font-bold rounded-full transition-all text-gray-500 hover:text-[#181411]">JP</a>
                         <span
-                            class="px-3 py-1 text-[10px] font-bold rounded-full bg-white text-primary shadow-sm">JP</span>
-                        <a href="en/index.html"
-                            class="px-3 py-1 text-[10px] font-bold rounded-full transition-all text-gray-500 hover:text-[#181411]">EN</a>
+                            class="px-3 py-1 text-[10px] font-bold rounded-full bg-white text-primary shadow-sm">EN</span>
                     </div>
 
                     <a class="flex items-center gap-2 bg-primary px-5 py-2.5 rounded-lg text-white text-sm font-bold hover:bg-opacity-90 transition-all shadow-lg shadow-primary/20"
                         href="#contact">
                         <span class="material-symbols-outlined text-sm">mail</span>
-                        お問い合わせ
+                        Contact
                     </a>
                 </nav>
+
                 <div class="flex items-center gap-4 md:hidden">
                     <!-- Mobile Language Switcher (Compact) -->
-                    <a href="en/index.html"
-                        class="size-8 rounded-full bg-gray-100 flex items-center justify-center text-[10px] font-bold text-gray-600 border border-gray-200">EN</a>
-                    <button class="text-[#181411]">
+                    <a href="../index.html"
+                        class="size-8 rounded-full bg-gray-100 flex items-center justify-center text-[10px] font-bold text-gray-600 border border-gray-200">JP</a>
+                    <button class="text-[#181411]" id="mobile-menu-btn">
                         <span class="material-symbols-outlined">menu</span>
                     </button>
                 </div>
@@ -130,21 +131,21 @@
                         </div>
                         <h1
                             class="text-4xl sm:text-5xl lg:text-7xl font-black text-[#181411] leading-[1.1] tracking-tight">
-                            シモジマン <br />
-                            <span class="text-primary tracking-tighter">Shimojiman</span>
+                            Shimojiman<br />
+                            <span class="text-primary tracking-tighter">Official Portfolio</span>
                         </h1>
                         <p class="text-lg sm:text-xl text-[#181411]/70 leading-relaxed max-w-xl">
-                            イベントMC / サイクルロードレース解説 / プロダクトレビュー。<br />
-                            専門知識とパッションで、スポーツとテクノロジーの魅力を最大限に引き出します。
+                            Event MC / Cycling Race Commentary / Product Reviews.<br />
+                            Bringing sports and technology to life with professional expertise and passion.
                         </p>
                         <div class="flex flex-wrap gap-4">
                             <a class="px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-xl shadow-primary/30 hover:translate-y-[-2px] transition-all"
                                 href="#contact">
-                                お仕事の依頼はこちら
+                                Work with Me
                             </a>
                             <a class="px-8 py-4 bg-white border border-gray-200 text-[#181411] font-bold rounded-xl hover:bg-gray-50 transition-all"
                                 href="#services">
-                                実績を見る
+                                View Portfolio
                             </a>
                         </div>
                     </div>
@@ -152,84 +153,93 @@
                         <div class="relative w-full h-full">
                             <img alt="Hero Image 1"
                                 class="absolute inset-0 w-full h-full object-cover animate-crossfade"
-                                style="animation-delay: 0s;" src="fhoto/DSCF8766.jpeg" />
+                                style="animation-delay: 0s;" src="../fhoto/DSCF8766.jpeg" />
                             <img alt="Hero Image 2"
                                 class="absolute inset-0 w-full h-full object-cover animate-crossfade"
-                                style="animation-delay: -4s;" src="fhoto/IMG_1218.jpeg" />
+                                style="animation-delay: -4s;" src="../fhoto/IMG_1218.jpeg" />
                             <img alt="Hero Image 3"
                                 class="absolute inset-0 w-full h-full object-cover animate-crossfade"
-                                style="animation-delay: -8s;" src="fhoto/DSC04559.jpeg" />
+                                style="animation-delay: -8s;" src="../fhoto/DSC04559.jpeg" />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- About Section -->
         <section class="py-24 bg-white" id="about">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col md:flex-row gap-16 items-start">
                     <div class="w-full md:w-1/3">
                         <h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4">About</h2>
-                        <h3 class="text-4xl font-black text-[#181411] leading-tight">マルチな才能で<br />現場を熱くする</h3>
+                        <h3 class="text-4xl font-black text-[#181411] leading-tight">Elevating Every<br />Moment</h3>
                     </div>
                     <div class="w-full md:w-2/3">
                         <p class="text-xl text-[#181411]/80 leading-relaxed mb-8">
-                            サイクルロードレースの実況解説から、最新ガジェットのプロダクトレビューまで、確かな専門知識とエネルギッシュなトークで現場を盛り上げます。
+                            From live cycling race commentary to in-depth product reviews of the latest tech gadgets, I
+                            bring energy and profound expertise to every project.
                         </p>
                         <p class="text-lg text-[#181411]/60 leading-relaxed">
-                            競技者としての視点と、メディアクリエイターとしての視点を融合。視聴者や観客に「技術的な深み」と「エンターテインメント性」を同時に提供することを得意としています。
+                            Combining my experience as a competitive athlete with my vision as a media creator, I
+                            specialize in delivering technical depth and entertainment value simultaneously to audiences
+                            worldwide.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Services Section -->
         <section class="py-24 bg-background-light" id="services">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4">Services</h2>
-                    <p class="text-3xl font-black text-[#181411]">提供可能なプロフェッショナルサービス</p>
+                    <p class="text-3xl font-black text-[#181411]">Professional Services</p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <!-- Service Card 1 -->
                     <a href="yonex_review.html"
                         class="block bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow group">
                         <div
-                            class="size-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-8 group-hover:text-white transition-all bg-secondary/10 group-hover:bg-secondary">
+                            class="size-16 rounded-xl flex items-center justify-center mb-8 group-hover:text-white transition-all bg-secondary/10 text-secondary group-hover:bg-secondary">
                             <span class="material-symbols-outlined text-4xl">video_camera_front</span>
                         </div>
-                        <h4 class="text-2xl font-bold mb-4">Product Review</h4>
+                        <h4 class="text-2xl font-bold mb-4">Product Reviews</h4>
                         <p class="text-[#181411]/70 leading-relaxed">
-                            自転車本体からアクセサリ、最新のテックガジェットまで。徹底的な使い込みに基づいた、信頼性の高い動画・記事制作を行います。
+                            From road bikes and accessories to the latest tech gadgets. Providing reliable, in-depth
+                            video and article production based on thorough real-world testing.
                         </p>
                     </a>
                     <!-- Service Card 2 -->
                     <a href="service_detail.html"
                         class="block bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow group">
                         <div
-                            class="size-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-8 group-hover:text-white transition-all bg-secondary/10 group-hover:bg-secondary">
+                            class="size-16 rounded-xl flex items-center justify-center mb-8 group-hover:text-white transition-all bg-secondary/10 text-secondary group-hover:bg-secondary">
                             <span class="material-symbols-outlined text-4xl">mic</span>
                         </div>
                         <h4 class="text-2xl font-bold mb-4">Event MC</h4>
                         <p class="text-[#181411]/70 leading-relaxed">
-                            スポーツイベント、テックカンファレンス、新製品発表会など。会場の空気を読み、スムーズかつエネルギッシュな進行をお約束します。
+                            Sports events, tech conferences, and new product launches. Ensuring smooth, high-energy
+                            proceedings by reading the room perfectly.
                         </p>
                     </a>
                     <!-- Service Card 3 -->
                     <a href="cycling_commentary.html"
                         class="block bg-white p-10 rounded-2xl shadow-sm border border-gray-100 hover:shadow-xl transition-shadow group">
                         <div
-                            class="size-16 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-8 group-hover:text-white transition-all bg-secondary/10 group-hover:bg-secondary">
+                            class="size-16 rounded-xl flex items-center justify-center mb-8 group-hover:text-white transition-all bg-secondary/10 text-secondary group-hover:bg-secondary">
                             <span class="material-symbols-outlined text-4xl">sports_score</span>
                         </div>
                         <h4 class="text-2xl font-bold mb-4">Cycling Commentary</h4>
                         <p class="text-[#181411]/70 leading-relaxed">
-                            JBCF（日本実業団自転車競技連盟）などのロードレース実況解説。戦術的な分析を分かりやすく伝え、レースの興奮を届けます。
+                            Live race commentary for JBCF and other major cycling events. Delivering tactical analysis
+                            in an accessible way to bring the excitement of the race to life.
                         </p>
                     </a>
                 </div>
             </div>
         </section>
+
         <!-- YouTube Section -->
         <section
             class="py-24 text-white relative overflow-hidden bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-primary/20"
@@ -240,20 +250,20 @@
                     <div class="w-full lg:w-1/2 text-center lg:text-left">
                         <div
                             class="inline-block px-4 py-1 text-white text-xs font-bold rounded-md mb-6 uppercase bg-secondary">
-                            YouTube Official</div>
-                        <h2 class="text-4xl sm:text-5xl font-black mb-8 leading-tight">登録者数
-                            100,000人超。<br />サイクリングコミュニティを<br />リードする発信力。</h2>
+                            Official YouTube</div>
+                        <h2 class="text-4xl sm:text-5xl font-black mb-8 leading-tight">100,000+
+                            Subscribers.<br />Leading the Cycling<br />Community.</h2>
                         <p class="text-lg text-white/70 leading-relaxed mb-10">
-                            「シモジマンチャンネル」では、最新機材の検証からトレーニング方法、レースの裏側まで、サイクリストに役立つ情報を日々配信。高いエンゲージメントを誇るコミュニティを形成しています。
+                            On the "Shimojiman Channel," I share valuable insights ranging from equipment testing to
+                            training methods and race behind-the-scenes, fostering a highly engaged community.
                         </p>
                         <a class="inline-flex items-center gap-3 px-8 py-4 bg-white text-[#181411] font-bold rounded-xl hover:bg-opacity-90 transition-all"
                             href="https://www.youtube.com/channel/UCboqMC5yvVhX8ugMlGLVr6g">
                             <span class="material-symbols-outlined">play_circle</span>
-                            YouTubeチャンネルを見る
+                            Visit YouTube Channel
                         </a>
                     </div>
                     <div id="youtube-videos-container" class="lg:w-1/2 grid grid-cols-2 gap-4 w-full">
-                        <!-- Loading Skeletons -->
                         <div class="aspect-video bg-white/5 rounded-xl border border-white/10 animate-pulse"></div>
                         <div class="aspect-video bg-white/5 rounded-xl border border-white/10 animate-pulse"></div>
                         <div class="aspect-video bg-white/5 rounded-xl border border-white/10 animate-pulse"></div>
@@ -279,8 +289,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl sm:text-2xl font-black text-white mb-2">Follow us on X</h3>
-                                <p class="text-white/60 text-sm font-medium">最新の活動情報をリアルタイムで発信中</p>
+                                <h3 class="text-xl sm:text-2xl font-black text-white mb-2">Follow on X</h3>
+                                <p class="text-white/60 text-sm font-medium">Real-time updates on latest activities</p>
                             </div>
                         </div>
                         <div
@@ -305,8 +315,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-xl sm:text-2xl font-black text-white mb-2">Official Instagram</h3>
-                                <p class="text-white/80 text-sm font-medium">美しい風景とバイクの日常をお届けします</p>
+                                <h3 class="text-xl sm:text-2xl font-black text-white mb-2">Instagram</h3>
+                                <p class="text-white/80 text-sm font-medium">Stunning landscapes and cycling life</p>
                             </div>
                         </div>
                         <div
@@ -327,95 +337,96 @@
                 <div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 gap-6">
                     <div class="text-center md:text-left">
                         <h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4">Blog Archive</h2>
-                        <p class="text-3xl font-black text-[#181411]">活動の記録</p>
+                        <p class="text-3xl font-black text-[#181411]">Activity Logs</p>
                     </div>
                     <div class="flex items-center p-1 bg-gray-100 rounded-lg">
                         <button data-filter="all"
-                            class="filter-tab px-4 py-2 text-xs font-bold rounded-md transition-all bg-primary text-white">すべて</button>
+                            class="filter-tab px-4 py-2 text-xs font-bold rounded-md transition-all bg-primary text-white">All</button>
                         <button data-filter="year"
-                            class="filter-tab px-4 py-2 text-xs font-bold rounded-md transition-all text-gray-600 hover:bg-white">年別</button>
+                            class="filter-tab px-4 py-2 text-xs font-bold rounded-md transition-all text-gray-600 hover:bg-white">Year</button>
                         <button data-filter="month"
-                            class="filter-tab px-4 py-2 text-xs font-bold rounded-md transition-all text-gray-600 hover:bg-white">月別</button>
+                            class="filter-tab px-4 py-2 text-xs font-bold rounded-md transition-all text-gray-600 hover:bg-white">Month</button>
                         <button data-filter="week"
-                            class="filter-tab px-4 py-2 text-xs font-bold rounded-md transition-all text-gray-600 hover:bg-white">週別</button>
+                            class="filter-tab px-4 py-2 text-xs font-bold rounded-md transition-all text-gray-600 hover:bg-white">Week</button>
                     </div>
                 </div>
                 <div id="blog-list-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- 読み込み中のスケルトン表示 -->
                     <div class="animate-pulse bg-gray-50 rounded-2xl h-80"></div>
                     <div class="animate-pulse bg-gray-50 rounded-2xl h-80 hidden md:block"></div>
                     <div class="animate-pulse bg-gray-50 rounded-2xl h-80 hidden lg:block"></div>
                 </div>
             </div>
         </section>
+
         <!-- Contact Section -->
         <section class="py-24 bg-white" id="contact">
             <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-sm font-bold text-primary uppercase tracking-[0.2em] mb-4">Contact</h2>
-                    <p class="text-3xl font-black text-[#181411]">ビジネスに関するお問い合わせ</p>
-                    <p class="mt-4 text-[#181411]/60">お仕事の依頼やタイアップのご相談など、お気軽にご連絡ください。</p>
+                    <p class="text-3xl font-black text-[#181411]">Business Inquiries</p>
+                    <p class="mt-4 text-[#181411]/60">Feel free to reach out for event bookings, partnerships, or
+                        sponsorships.</p>
                 </div>
                 <form id="contact-form" class="space-y-6">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-bold text-[#181411] mb-2 flex items-center gap-1">
-                                お名前
-                                <span class="text-red-500 text-xs font-normal">（必須）</span>
+                                Full Name
+                                <span class="text-red-500 text-xs font-normal">(Required)</span>
                             </label>
                             <input name="name" id="contact-name"
                                 class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                                placeholder="山田 太郎" type="text" required />
+                                placeholder="John Doe" type="text" required />
                         </div>
                         <div>
-                            <label class="block text-sm font-bold text-[#181411] mb-2">貴社名 / 組織名</label>
+                            <label class="block text-sm font-bold text-[#181411] mb-2">Company / Organization</label>
                             <input name="company" id="contact-company"
                                 class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                                placeholder="株式会社Shimojiman" type="text" />
+                                placeholder="Example Corp" type="text" />
                         </div>
                     </div>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-bold text-[#181411] mb-2 flex items-center gap-1">
-                                メールアドレス
-                                <span class="text-red-500 text-xs font-normal">（必須）</span>
+                                Email Address
+                                <span class="text-red-500 text-xs font-normal">(Required)</span>
                             </label>
                             <input name="email" id="contact-email"
                                 class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                                 placeholder="example@email.com" type="email" required />
                         </div>
                         <div>
-                            <label class="block text-sm font-bold text-[#181411] mb-2">電話番号</label>
+                            <label class="block text-sm font-bold text-[#181411] mb-2">Phone Number</label>
                             <input name="tel" id="contact-tel"
                                 class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                                placeholder="090-0000-0000" type="tel" />
+                                placeholder="000-0000-0000" type="tel" />
                         </div>
                     </div>
                     <div>
-                        <label class="block text-sm font-bold text-[#181411] mb-2">ホームページURL</label>
+                        <label class="block text-sm font-bold text-[#181411] mb-2">Website URL</label>
                         <input name="website" id="contact-website"
                             class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                             placeholder="https://example.com" type="url" />
                     </div>
                     <div>
                         <label class="block text-sm font-bold text-[#181411] mb-2 flex items-center gap-1">
-                            お問い合わせ内容
-                            <span class="text-red-500 text-xs font-normal">（必須）</span>
+                            Message
+                            <span class="text-red-500 text-xs font-normal">(Required)</span>
                         </label>
                         <textarea name="content" id="contact-content"
                             class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                            placeholder="ご依頼内容、時期、ご予算など" rows="6" required></textarea>
+                            placeholder="Details of your inquiry..." rows="6" required></textarea>
                     </div>
                     <div class="flex items-center gap-3 bg-gray-50 p-4 rounded-lg border border-gray-100">
                         <input type="checkbox" id="not-robot"
                             class="size-5 rounded border-gray-300 text-primary focus:ring-primary cursor-pointer">
-                        <label for="not-robot"
-                            class="text-sm font-medium text-[#181411] cursor-pointer">私はロボットではありません</label>
+                        <label for="not-robot" class="text-sm font-medium text-[#181411] cursor-pointer">I am not a
+                            robot</label>
                     </div>
                     <button id="submit-button"
                         class="w-full py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/30 hover:bg-opacity-95 transition-all disabled:opacity-50 disabled:cursor-not-allowed"
                         type="submit">
-                        確認画面へ
+                        Confirm Details
                     </button>
                 </form>
 
@@ -426,7 +437,7 @@
                     <div class="bg-white w-full max-w-2xl rounded-3xl shadow-2xl relative z-10 overflow-hidden transform transition-all scale-95 opacity-0 duration-300"
                         id="modal-content">
                         <div class="p-6 border-b border-gray-100 flex items-center justify-between">
-                            <h3 class="text-xl font-bold text-[#181411]">内容の確認</h3>
+                            <h3 class="text-xl font-bold text-[#181411]">Confirm Inquiry</h3>
                             <button onclick="closeModal()" class="text-gray-400 hover:text-gray-600 transition-colors">
                                 <span class="material-symbols-outlined">close</span>
                             </button>
@@ -436,10 +447,11 @@
                         </div>
                         <div class="p-6 bg-gray-50 border-t border-gray-100 flex flex-col sm:flex-row gap-4">
                             <button onclick="closeModal()"
-                                class="flex-1 py-4 px-6 border border-gray-200 rounded-xl font-bold text-gray-600 hover:bg-white transition-all">修正する</button>
+                                class="flex-1 py-4 px-6 border border-gray-200 rounded-xl font-bold text-gray-600 hover:bg-white transition-all">Back
+                                to Edit</button>
                             <button onclick="sendEmail()" id="final-send-button"
                                 class="flex-1 py-4 px-6 bg-primary text-white rounded-xl font-bold shadow-lg shadow-primary/20 hover:bg-opacity-90 transition-all flex items-center justify-center gap-2">
-                                <span id="send-btn-text">送信を確定する</span>
+                                <span id="send-btn-text">Confirm & Send</span>
                                 <div id="loading-spinner"
                                     class="hidden size-4 border-2 border-white/30 border-t-white rounded-full animate-spin">
                                 </div>
@@ -457,13 +469,14 @@
                             class="size-20 bg-green-500 rounded-full flex items-center justify-center text-white mx-auto mb-6 shadow-xl shadow-green-500/20">
                             <span class="material-symbols-outlined text-4xl">check</span>
                         </div>
-                        <h3 class="text-3xl font-black text-[#181411] mb-4">送信完了</h3>
+                        <h3 class="text-3xl font-black text-[#181411] mb-4">Sent Successfully</h3>
                         <p class="text-lg text-[#181411]/60 mb-8 max-w-md mx-auto">
-                            お問い合わせありがとうございます。<br>
-                            内容を確認の上、担当者より折り返しご連絡いたします。
+                            Thank you for your inquiry.<br>
+                            We will review your message and get back to you shortly.
                         </p>
                         <button onclick="closeSuccess()"
-                            class="py-3 px-8 bg-[#181411] text-white rounded-full font-bold hover:scale-105 transition-all">トップへ戻る</button>
+                            class="py-3 px-8 bg-[#181411] text-white rounded-full font-bold hover:scale-105 transition-all">Back
+                            to Top</button>
                     </div>
                 </div>
             </div>
@@ -471,34 +484,25 @@
     </main>
 
     <script>
-        // YouTube Dynamic Feed
         async function fetchYouTubeVideos() {
             const channelId = 'UCboqMC5yvVhX8ugMlGLVr6g';
             const container = document.getElementById('youtube-videos-container');
-
             try {
-                // Using rss2json as a proxy to fetch YouTube RSS feed as JSON without CORS issues
                 const rssUrl = `https://www.youtube.com/feeds/videos.xml?channel_id=${channelId}`;
                 const response = await fetch(`https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`);
                 const data = await response.json();
-
                 if (data.status === 'ok') {
-                    const items = data.items.slice(0, 4); // Latest 4 videos
+                    const items = data.items.slice(0, 4);
                     container.innerHTML = items.map(item => {
                         let videoId = '';
-                        if (item.link.includes('v=')) {
-                            videoId = item.link.split('v=')[1].split('&')[0];
-                        } else if (item.link.includes('/shorts/')) {
-                            videoId = item.link.split('/shorts/')[1].split('?')[0];
-                        }
-
+                        if (item.link.includes('v=')) { videoId = item.link.split('v=')[1].split('&')[0]; }
+                        else if (item.link.includes('/shorts/')) { videoId = item.link.split('/shorts/')[1].split('?')[0]; }
                         if (!videoId) return '';
-
                         const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
                         const fallbackUrl = `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
                         const escapedTitle = escapeHTML(item.title);
-                        const escapedLink = item.link.replace(/"/g, '&quot;'); // Basic attribute escape
+                        const escapedLink = item.link.replace(/"/g, '&quot;');
 
                         return `
                             <a href="${escapedLink}" target="_blank"
@@ -512,33 +516,21 @@
                             </a>
                         `;
                     }).join('');
-                } else {
-                    throw new Error('RSS conversion failed');
-                }
+                } else { throw new Error('RSS conversion failed'); }
             } catch (error) {
-                console.error("YouTube取得失敗:", error);
-                // Fallback to static if failed
-                container.innerHTML = `
-                    <a href="https://www.youtube.com/watch?v=_PkK7vpfSS8" target="_blank" class="aspect-video bg-white/5 rounded-xl border border-white/10" style='background-image: url("https://img.youtube.com/vi/_PkK7vpfSS8/maxresdefault.jpg"); background-size: cover; background-position: center;'></a>
-                    <a href="https://www.youtube.com/watch?v=cEfPGS0xa9w" target="_blank" class="aspect-video bg-white/5 rounded-xl border border-white/10" style='background-image: url("https://img.youtube.com/vi/cEfPGS0xa9w/maxresdefault.jpg"); background-size: cover; background-position: center;'></a>
-                    <a href="https://www.youtube.com/watch?v=1rNJ6RDKBWc" target="_blank" class="aspect-video bg-white/5 rounded-xl border border-white/10" style='background-image: url("https://img.youtube.com/vi/1rNJ6RDKBWc/maxresdefault.jpg"); background-size: cover; background-position: center;'></a>
-                    <a href="https://www.youtube.com/watch?v=NU-ykPo39zA" target="_blank" class="aspect-video bg-white/5 rounded-xl border border-white/10" style='background-image: url("https://img.youtube.com/vi/NU-ykPo39zA/hqdefault.jpg"); background-size: cover; background-position: center;'></a>
-                `;
+                console.error("YouTube Error:", error);
+                container.innerHTML = `<div class="col-span-2 text-center text-white/50 py-10">Failed to load videos. Please check our channel directly.</div>`;
             }
         }
 
-        // Initialize
         document.addEventListener('DOMContentLoaded', fetchYouTubeVideos);
 
-        // Contact form validation
-        // Contact form advanced flow
         const contactForm = document.getElementById('contact-form');
         const modal = document.getElementById('confirmation-modal');
         const modalContent = document.getElementById('modal-content');
         const modalBody = document.getElementById('modal-body');
         const successFeedback = document.getElementById('success-feedback');
         const successContent = document.getElementById('success-content');
-
         let formData = {};
 
         function closeModal() {
@@ -562,57 +554,49 @@
 
         contactForm.addEventListener('submit', function (e) {
             e.preventDefault();
-
             formData = {
                 name: document.getElementById('contact-name').value.trim(),
-                company: document.getElementById('contact-company').value.trim() || '未入力',
+                company: document.getElementById('contact-company').value.trim() || 'N/A',
                 email: document.getElementById('contact-email').value.trim(),
-                tel: document.getElementById('contact-tel').value.trim() || '未入力',
-                website: document.getElementById('contact-website').value.trim() || '未入力',
+                tel: document.getElementById('contact-tel').value.trim() || 'N/A',
+                website: document.getElementById('contact-website').value.trim() || 'N/A',
                 content: document.getElementById('contact-content').value.trim()
             };
-
             const isChecked = document.getElementById('not-robot').checked;
-
             if (!formData.name || !formData.email || !formData.content) {
-                alert('必須項目を入力してください。');
+                alert('Please fill in all required fields.');
                 return;
             }
-
             if (!isChecked) {
-                alert('「私はロボットではありません」にチェックを入れてください。');
+                alert('Please check "I am not a robot".');
                 return;
             }
-
-            // Populate modal
             modalBody.innerHTML = `
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-gray-50 pb-4">
-                    <span class="text-sm font-bold text-gray-400">お名前</span>
+                    <span class="text-sm font-bold text-gray-400">Name</span>
                     <span class="col-span-2 text-gray-900">${escapeHTML(formData.name)}</span>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-gray-50 pb-4">
-                    <span class="text-sm font-bold text-gray-400">貴社名 / 組織名</span>
+                    <span class="text-sm font-bold text-gray-400">Company</span>
                     <span class="col-span-2 text-gray-900">${escapeHTML(formData.company)}</span>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-gray-50 pb-4">
-                    <span class="text-sm font-bold text-gray-400">メールアドレス</span>
+                    <span class="text-sm font-bold text-gray-400">Email</span>
                     <span class="col-span-2 text-gray-900">${escapeHTML(formData.email)}</span>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-gray-50 pb-4">
-                    <span class="text-sm font-bold text-gray-400">電話番号</span>
+                    <span class="text-sm font-bold text-gray-400">Phone</span>
                     <span class="col-span-2 text-gray-900">${escapeHTML(formData.tel)}</span>
                 </div>
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 border-b border-gray-50 pb-4">
-                    <span class="text-sm font-bold text-gray-400">ホームページURL</span>
+                    <span class="text-sm font-bold text-gray-400">Website</span>
                     <span class="col-span-2 text-gray-900 font-mono text-xs break-all">${escapeHTML(formData.website)}</span>
                 </div>
                 <div class="pt-2">
-                    <span class="text-sm font-bold text-gray-400 block mb-3">お問い合わせ内容</span>
+                    <span class="text-sm font-bold text-gray-400 block mb-3">Message</span>
                     <div class="text-gray-900 leading-relaxed whitespace-pre-wrap bg-gray-50 p-4 rounded-xl text-sm border border-gray-100">${escapeHTML(formData.content)}</div>
                 </div>
             `;
-
-            // Open modal
             modal.classList.remove('hidden');
             modal.classList.add('flex');
             setTimeout(() => {
@@ -625,28 +609,13 @@
             const btn = document.getElementById('final-send-button');
             const btnText = document.getElementById('send-btn-text');
             const spinner = document.getElementById('loading-spinner');
-
-            // Set loading state
             btn.disabled = true;
-            btnText.textContent = '送信中...';
+            btnText.textContent = 'Sending...';
             spinner.classList.remove('hidden');
-
             try {
-                // IMPORTANT: In a real setup, replace '_xxxx' with your actual Formspree ID
-                // For this demo, we'll simulate the submission success
-                const response = await fetch('https://formspree.io/f/smjm.official@gmail.com', { // Note: Formspree usually needs an ID, but can use email for some plans
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(formData)
-                });
-
-                // Simulate success for local testing environments where fetching might fail
+                // Simulate send
                 await new Promise(resolve => setTimeout(resolve, 1500));
-
-                // Close confirmation modal
                 closeModal();
-
-                // Open success feedback
                 setTimeout(() => {
                     successFeedback.classList.remove('hidden');
                     successFeedback.classList.add('flex');
@@ -656,17 +625,17 @@
                     }, 50);
                     contactForm.reset();
                 }, 400);
-
             } catch (error) {
                 console.error('Send error:', error);
-                alert('送信中にエラーが発生しました。時間をおいて再度お試しください。');
+                alert('An error occurred. Please try again later.');
             } finally {
                 btn.disabled = false;
-                btnText.textContent = '送信を確定する';
+                btnText.textContent = 'Confirm & Send';
                 spinner.classList.add('hidden');
             }
         }
     </script>
+
     <!-- Footer -->
     <footer class="bg-background-light py-12 border-t border-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -680,12 +649,12 @@
                         <span class="text-lg font-extrabold tracking-tighter">SHIMOJIMAN</span>
                     </a>
                     <div class="text-sm text-[#181411]/70 leading-relaxed">
-                        <p class="font-bold text-[#181411]">"来店予約制"ハイランダー/里山の自転車店</p>
-                        <p>〒669-2222 兵庫県丹波篠山市味間南５５８−３</p>
+                        <p class="font-bold text-[#181411]">"Reservation Only" Highlander / Satoyama Bicycle Shop</p>
+                        <p>558-3 Ajimaminami, Tamba-Sasayama, Hyogo 669-2222, Japan</p>
                         <a href="https://maps.app.goo.gl/dsGVr1iq66qZk3wU6" target="_blank"
                             class="text-primary hover:underline flex items-center gap-1 mt-1">
                             <span class="material-symbols-outlined text-xs">map</span>
-                            Google Mapsで見る
+                            View on Google Maps
                         </a>
                     </div>
                 </div>
@@ -721,11 +690,7 @@
                     </div>
                 </div>
             </div>
-            <p class="text-[11px] text-[#181411]/40">
-                © 2024 Shimojiman. All rights reserved.
-            </p>
-        </div>
-        </div>
+            <p class="text-[11px] text-[#181411]/40">© 2024 Shimojiman. All rights reserved.</p>
         </div>
     </footer>
 </body>

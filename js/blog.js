@@ -140,7 +140,7 @@ function renderPostCard(post) {
                         <span class="text-[10px] font-bold uppercase tracking-wider bg-gray-100 text-gray-500 px-2 py-0.5 rounded">Blog</span>
                         <time class="text-[11px] text-gray-400 font-medium">${date}</time>
                     </div>
-                    <h4 class="text-base font-bold text-gray-800 leading-snug group-hover:text-primary transition-colors mb-2">${post.title}</h4>
+                    <h4 class="text-base font-bold text-gray-800 leading-snug group-hover:text-primary transition-colors mb-2">${escapeHTML(post.title)}</h4>
                     <p class="text-xs text-gray-500 line-clamp-2 leading-relaxed">${post.content.replace(/<[^>]*>?/gm, '')}</p>
                 </div>
             </a>

@@ -201,6 +201,7 @@
         </article>
     </main>
 
+    <script src="js/utils.js"></script>
     <script>
         const MICROCMS_DOMAIN = "c1hyze94lo";
         const MICROCMS_API_KEY = "lsav21va5wjfZhLC7mU5u8kG4ARJ6V5BPFSS";
@@ -219,7 +220,7 @@
                 });
                 const post = await response.json();
 
-                document.title = `${post.title} | シモジマン`;
+                document.title = `${escapeHTML(post.title)} | シモジマン`;
                 document.getElementById('blog-title').textContent = post.title;
                 document.getElementById('blog-date').textContent = new Date(post.publishedAt || post.createdAt).toLocaleDateString("ja-JP");
 
